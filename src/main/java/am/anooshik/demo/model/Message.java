@@ -15,6 +15,9 @@ public class Message {
 
     private String content;
 
+    private String subject;
+    private String field;
+
     private String topic;
 
     private LocalDateTime dateAdded;
@@ -50,5 +53,21 @@ public class Message {
 
     public void setDateAdded(LocalDateTime dateAdded) {
         this.dateAdded = dateAdded;
+    }
+
+    public String getSubject() {
+        return subject;
+    }
+
+    public void setSubject(String subject) {
+        this.subject = subject;
+    }
+
+    public String getField() {
+        return field;
+    }
+
+    public void setField(String field) {
+        this.field = field;
     }
 }
